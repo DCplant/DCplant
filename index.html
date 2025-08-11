@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>디씨플란트치과 | WeChat QR</title>
+<title>디씨플란트치과 | 빠른 연결</title>
 <style>
   :root{--brand:#00704A;--text:#0b0b0b;--muted:#6b7280}
   body{margin:0;background:#f6f7f8;font-family:system-ui,-apple-system,Segoe UI,Roboto,Pretendard,Malgun Gothic,sans-serif;color:var(--text)}
@@ -15,9 +15,8 @@
   .qr{margin:18px auto 8px}
   .qr img{width:min(88vw,360px);height:auto;border-radius:12px;background:#fff;padding:12px;box-shadow:0 6px 16px rgba(0,0,0,.06)}
   .hint{margin-top:10px;color:var(--muted);font-size:13px;line-height:1.5}
-  .hint strong{color:#0b0b0b}
-  .actions{margin-top:14px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-  .btn{display:inline-block;padding:12px 14px;border-radius:14px;border:1px solid rgba(0,0,0,.08);text-decoration:none;color:#0b0b0b;font-weight:700}
+  .btns{display:grid;gap:12px;margin:18px 0}
+  .btn{display:block;text-decoration:none;padding:16px 14px;border-radius:16px;font-weight:700;border:1px solid rgba(0,0,0,.08);color:#0b0b0b;background:#fff}
   .btn.primary{background:var(--brand);color:#fff;border-color:transparent}
   footer{margin-top:14px;color:var(--muted);font-size:12px}
 </style>
@@ -27,19 +26,31 @@
     <div class="card">
       <div class="logo">DC</div>
       <h1>디씨플란트치과</h1>
-      <p>WeChat 연결용 QR</p>
+      <p>DC种植牙科</p>
+      <!-- 링크 버튼들 -->
+      <div class="btns">
+        <!-- 카카오톡: 채널/오픈채팅 URL로 교체 -->
+        <a class="btn primary" href="#" target="_blank" rel="noopener">📣 카카오톡 상담</a>
 
-      <!-- QR 크게 표시 -->
-      <div class="qr">
-        <img src="wechat-qr.png" alt="WeChat QR" />
+        <!-- 네이버 지도: 공유 링크로 교체 -->
+        <a class="btn" href="#" target="_blank" rel="noopener">🗺️ 네이버 지도 · 길찾기</a>
+
+        <!-- 전화 연결: 실번호 적용 -->
+        <a class="btn" href="tel:0314392080">📞 전화하기 (031-439-2080)</a>
+
+        <!-- 홈페이지/예약: 주소 있으면 교체 -->
+        <a class="btn" href="#" target="_blank" rel="noopener">🌐 홈페이지 · 예약</a>
       </div>
 
+      <!-- WeChat QR 크게 표시 -->
+      <div class="qr">
+        <img src="wechat-qr.png?v=3" alt="WeChat QR (위챗 앱에서 스캔하세요)" />
+      </div>
       <div class="hint">
         <strong>사용 방법</strong><br/>
-        ① <b>위챗 앱</b> 실행 → ② <b>스캔</b>(扫一扫) 선택 → ③ 위 QR을 스캔<br/>
+        ① <b>위챗 앱</b> 실행 → ② <b>스캔</b>(扫一扫) → ③ 위 QR 스캔<br/>
         使用方法：打开<b>微信</b> → 点击<b>扫一扫</b> → 扫描上方二维码
       </div>
-
       <footer>© 디씨플란트치과</footer>
     </div>
   </div>
